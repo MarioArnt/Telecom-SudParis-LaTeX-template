@@ -1,0 +1,109 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[frenchb]{babel}
+\usepackage[top=20mm, bottom=20mm, left=25mm , right=25mm]{geometry}
+\usepackage{url}
+\usepackage{comment}
+\usepackage{color}
+\urlstyle{same}
+
+\begin{document}
+
+
+\begin{titlepage}
+  \begin{centering}
+  \textcolor{white}{.}\\
+  \vspace{45mm}
+  \begin{Huge}
+    \textbf{Titre}\\
+    \vspace{5 mm}
+    \textbf{Sous-titre du rapport}\\
+  \end{Huge}
+  \vspace{20 mm}
+
+  \begin{normalsize}
+    Prénom1 \bsc{Nom1}\\
+    \texttt{prenom1.nom1@telecom-sudparis.eu}\\
+  \end{normalsize}
+
+  \vspace{5 mm}
+
+  \begin{normalsize}
+     Prénom2 \bsc{Nom2}\\
+    \texttt{prenom2.nom2@telecom-sudparis.eu}\\
+  \end{normalsize}
+
+  \vspace{10 mm}
+
+  \begin{normalsize}
+    23 octobre 2015
+  \end{normalsize}
+
+  \end{centering}
+  \vfill
+
+
+  \begin{minipage}{0.7\linewidth}
+    \noindent Projet de fin d'étude
+    \\VAP Système embarqués, mobilités et objets communicants
+    \\ Télécom SudParis
+  \end{minipage}\hfill
+  \begin{minipage}{0.25\linewidth}
+    \begin{flushright}
+      \includegraphics[height=0.07\textheight]{tsp.png}
+    \end{flushright}
+  \end{minipage}
+
+
+
+\end{titlepage}
+
+
+\thispagestyle{empty}
+\newpage
+\newpage
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+\newpage
+\setcounter{page}{1}
+
+
+
+
+
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+\chapter{Titre du chapitre}
+
+\section{Titre de la partie}
+
+\subsection{Titre de la sous-partie}
+
+\subsubsection{Titre de la sous-sous-partie}
+
+\chapter*{Conclusion}
+\addcontentsline{toc}{chapter}{Conclusion}
+
+
+\begin{comment}
+  Pour inclure des figures au fil du rapport
+  \begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.3]{relative/path/to/figure.png}
+  \caption{Some explaination about the figure}
+  \label{Some explaination about the figure}
+  \end{figure}
+\end{comment}
+
+\newpage
+\nocite{ref1, ref2, ref3, ref4}
+
+\bibliographystyle{plain}
+\bibliography{rapport}
+\addcontentsline{toc}{chapter}{Bibliographie}
+
+\end{document}
